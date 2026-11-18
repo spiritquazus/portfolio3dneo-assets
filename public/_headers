@@ -1,3 +1,10 @@
-/*
+# Versioned model files (portfolio3d src/config/assets.ts ASSET_VERSION): never change in place.
+/v1/*
   Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Legacy unversioned paths and libs: short cache, revalidated. (Patterns must not overlap: Cloudflare
+# Pages merges the headers of every matching rule.)
+/assets/*
+  Cache-Control: public, max-age=3600
   Access-Control-Allow-Origin: *
